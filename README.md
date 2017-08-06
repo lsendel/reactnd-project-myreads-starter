@@ -1,9 +1,11 @@
 
 
-instructions installing and launching the project.
+**instructions installing and launching the project.**
 
 Run npm install to install application components.
-Run npm start to launch the development server. The browser will open automatically with the created app’s URL.
+Run npm start to launch the development server. 
+
+The browser will open automatically with the created app’s URL.
 
 To build an optimized bundle, run npm run build.
 
