@@ -11,9 +11,9 @@ class SearchPage extends Component {
         query: ''
     }
 
-    mergeArr = (arr, Arr) => {
-        return arr.map((item) => {
-            Arr.forEach((Item) => {
+    mergeResultsWithSelection = (bookSearch, myBooks) => {
+        return bookSearch.map((item) => {
+            myBooks.forEach((Item) => {
                 if (Item.id === item.id) {
                     item.shelf = Item.shelf
                     return
@@ -34,7 +34,7 @@ class SearchPage extends Component {
             BooksAPI.search(value, 10).then((books) => {
                 if (books.length > 0) {
                     books = books.filter((book) => book.imageLinks)
-                    books = this.mergeArr(books, this.props.myBooks)
+                    books = this.mergeResultsWithSelection(books, this.props.myBooks)
                     this.setState({books})
                 }
                 else {

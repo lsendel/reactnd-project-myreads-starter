@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 
-class SearchBooks extends Component {
-    render() {
+const SearchBooks = (props) => (
+
         return (
             <div className="search-books">
                 <div className="search-books-bar">
@@ -24,7 +24,4 @@ class SearchBooks extends Component {
                 </div>
             </div>
         )
-    }
-}
-
-export default SearchBooks
+)

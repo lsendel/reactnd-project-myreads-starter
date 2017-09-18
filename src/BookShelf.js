@@ -20,7 +20,7 @@ class BookShelf extends Component {
                         {books.map((book, index) => (
                             <Book imageURL={book.imageLinks}  title={book.title} author={book.authors}
                                 key={``.concat(book.id, index)}
-                                shelf={book.shelf}
+                                shelf={book.shelf || "disabled"}
                                 onShelfChange={(shelf) => {
                                     this.props.onShelfChange(book.id, shelf)
                                 }}
