@@ -1,13 +1,73 @@
 
 
-**instructions installing and launching the project.**
+**Instructions**
 
-Run npm install to install application components.
+The application was created with create-react-app and requires only npm install and npm start to get it installed and launched.
+
+**I. Installing Requirements**
+Make sure you have npm package manager installed on your computer, to run the application. (https://nodejs.org/en/download/package-manager/) 
+
+
+Go to the root folder of your application and run npm install to install the react components on your environment. 
+
+**npm install**
+
+**II. Launching the application.**
 Run npm start to launch the development server. 
 
-The browser will open automatically with the created app’s URL.
+**npm start**
+ 
+A Development server will be launched, once the developer server is launched;
+The browser will open automatically with the created app’s URL, Bellow is an example of how you would see server starting....
 
-To build an optimized bundle, run npm run build.
+ ```
+ > @ start /reactnd-project-myreads-starter
+ > react-scripts start
+ 
+ Starting the development server...
+ 
+ Compiled successfully!
+ 
+ The app is running at:
+ 
+   http://localhost:3000/
+ 
+ Note that the development build is not optimized.
+ To create a production build, use yarn run build.
+ ``` 
+
+**III. Creating an optimized production build...**
+Run npm run build to build the application in a production mode. 
+
+**npm run build**
+
+Bellow is an example of how you would see server starting....
+```
+> @ build /Users/lds/reactnd-project-myreads-starter
+> react-scripts build
+
+Creating an optimized production build...
+Compiled successfully.
+
+File sizes after gzip:
+
+  60.36 KB  build/static/js/main.4ea70024.js
+  954 B     build/static/css/main.521aac3a.css
+
+The project was built assuming it is hosted at the server root.
+To override this, specify the homepage in your package.json.
+For example, add this to build it for GitHub Pages:
+
+  "homepage": "http://myname.github.io/myapp",
+
+The build folder is ready to be deployed.
+You may serve it with a static server:
+
+  yarn global add serve
+  serve -s build
+```
+
+**IV.Some Details about the code***
 
 This is the starter template for the final assessment project for Udacity's React Fundamentals course, developed by [React Training](https://reacttraining.com). The goal of this template is to save you time by providing a static example of the CSS and HTML markup that may be used, but without any of the React code that is needed to complete the project. If you choose to start with this template, your job will be to add interactivity to the app by refactoring the static code in this template.
 
